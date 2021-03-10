@@ -1,0 +1,121 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.App {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  box-shadow: 3px 0 40px 10px rgba(68, 68, 68, 0.6),
+  -3px 0 40px 10px rgba(68, 68, 68, 0.6);
+}
+
+.toolbar {
+  display: flex;
+  padding: 1.5rem 2rem 1rem;
+  align-content: stretch;
+  width: 100%;
+  background: rgb(252, 152, 9);
+  background: linear-gradient(90deg, #FA6A23 0%, #E43A27 96%);
+  position: relative;
+}
+
+
+button, input {
+  border: none;
+  height: 40px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.search-input {
+  color: black;
+  background-image: url('./movie.svg');
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  background-size: 30px 25px;
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(48deg) brightness(106%) contrast(101%);
+  margin-right: 0;
+  padding: 10px 10px 10px 50px;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+}
+
+::placeholder {
+  font-weight: 800;
+  color: black;
+  opacity: 1;
+}
+
+.search-button {
+  color: #ff4500;
+  background: white;
+  margin-left: 5px;
+  flex-grow: 0;
+  font-size: 18px;
+  width: 40px;
+}
+
+.autoContainer {
+  position: absolute;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0 7px 7px -3px rgb(201, 203, 207);
+  left: 5rem;
+  right: 2rem;
+  top: 1rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 5px 5px 50px;
+  font-size: 18px;
+  color: #354655;
+}
+
+.option:first-child {
+  background-image: url('./movie.svg');
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 25px 20px;
+  border-bottom: 1px solid #C9CBCF;
+}
+
+.option:first-child > .title {
+  color: black;
+}
+
+.option:first-child > .info {
+  color: #738697;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.title {
+  margin-top: 5px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.info {
+  font-size: x-small;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
